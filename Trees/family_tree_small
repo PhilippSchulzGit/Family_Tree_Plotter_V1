@@ -1,0 +1,29 @@
+graph {
+	graph [concentrate=false newrank=true nodesep=0.75 overlap=false ranksep=0.5 splines=ortho]
+	node [label="\N" shape=box style=filled]
+	edge [arrowhead=none dir=none penwidth=3]
+	subgraph cluster_1_2 {
+		graph [newrank=true peripheries=0 rank=same]
+		1 [label=<First Name 2 Last Name<BR/> 2<BR/><FONT POINT-SIZE="9">1967-02-12 - today</FONT><BR/><FONT POINT-SIZE="5"> </FONT><BR ALIGN="CENTER"/>> fillcolor="#F4C2C2" fixedsize=true group=G1 height=2.6 image="Images/woman.png" imagepos=tc imagescale=true labelloc=bc penwidth=3 width=2]
+		2 [label=<First Name 3 Last Name<BR/> 1<BR/><FONT POINT-SIZE="9">1965-02-11 - today</FONT><BR/><FONT POINT-SIZE="5"> </FONT><BR ALIGN="CENTER"/>> fillcolor="#C2EBED" fixedsize=true group=G2 height=2.6 image="Images/man.png" imagepos=tc imagescale=true labelloc=bc penwidth=3 width=2]
+		N1_2 [shape=point width=0.08]
+		1 -- N1_2
+		N1_2 -- 2
+	}
+	{
+		graph [newrank=true rank=same]
+		N1_2_3 [shape=point width=0.08]
+		N1_2_0 [shape=point width=0.08]
+		N1_2B [shape=point width=0.08]
+	}
+	N1_2 -- N1_2B
+	N1_2_3 -- N1_2B
+	N1_2B -- N1_2_0
+	N1_2_3 -- 3
+	N1_2_0 -- 0
+	{
+		graph [newrank=true peripheries=0 rank=same]
+		3 [label=<First Name 4 Last Name<BR/> 1<BR/><FONT POINT-SIZE="9">1996-09-06 - today</FONT><BR/><FONT POINT-SIZE="5"> </FONT><BR ALIGN="CENTER"/>> fillcolor="#C2EBED" fixedsize=true group=G3 height=2.6 image="Images/man.png" imagepos=tc imagescale=true labelloc=bc penwidth=3 width=2]
+		0 [label=<First Name 1 Last Name<BR/> 1<BR/><FONT POINT-SIZE="9">1999-02-12 - today</FONT><BR/><FONT POINT-SIZE="5"> </FONT><BR ALIGN="CENTER"/>> fillcolor="#C2EBED" fixedsize=true group=G0 height=2.6 image="Images/man.png" imagepos=tc imagescale=true labelloc=bc penwidth=3 width=2]
+	}
+}
