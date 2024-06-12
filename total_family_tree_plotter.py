@@ -13,8 +13,9 @@ import graphviz
 import excel_parser
 
 path = "Stammbaum_anonymous_small.xlsx"  # define path and filename for Excel file with family tree data
-path = "Stammbaum_anonymous_medium.xlsx"  # define path and filename for Excel file with family tree data
-path = "Stammbaum_anonymous.xlsx"  # define path and filename for Excel file with family tree data
+path = "Stammbaum_anonymous_small2.xlsx"  # define path and filename for Excel file with family tree data
+# path = "Stammbaum_anonymous_medium.xlsx"  # define path and filename for Excel file with family tree data
+# path = "Stammbaum_anonymous.xlsx"  # define path and filename for Excel file with family tree data
 dot_node_size = str(0.08)  # size of the small dot that is plotted between two people
 graph_attributes={'splines': "ortho", 'nodesep':'0.75',  'ranksep': '0.5', 'overlap':'false',
             'newrank':'true', 'concentrate': 'false'}
